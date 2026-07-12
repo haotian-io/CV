@@ -37,30 +37,30 @@
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 
 \newcommand{\cvsection}[1]{%
-  \vspace{5.8pt}%
-  {\sffamily\bfseries\fontsize{10.8}{12.5}\selectfont\color{navy}\MakeUppercase{#1}}\par
+  \vspace{6.1pt}%
+  {\sffamily\bfseries\fontsize{10.9}{12.7}\selectfont\color{navy}\MakeUppercase{#1}}\par
   \vspace{1.5pt}%
-  {\color{rule}\hrule height 0.6pt}\vspace{4.0pt}%
+  {\color{rule}\hrule height 0.6pt}\vspace{4.2pt}%
 }
 
 \newcommand{\entrytitle}[2]{%
   \begin{tabularx}{\linewidth}{@{}Y r@{}}
-    {\sffamily\bfseries\fontsize{9.45}{11.4}\selectfont #1} &
-    {\sffamily\fontsize{9.0}{11.4}\selectfont\color{muted} #2} \\
+    {\sffamily\bfseries\fontsize{9.6}{11.7}\selectfont #1} &
+    {\sffamily\fontsize{9.15}{11.7}\selectfont\color{muted} #2} \\
   \end{tabularx}\par
 }
 
 \newcommand{\entryrole}[1]{%
-  {\itshape\fontsize{9.1}{11.3}\selectfont\color{muted}#1}\par\vspace{0.9pt}%
+  {\itshape\fontsize{9.25}{11.55}\selectfont\color{muted}#1}\par\vspace{1.0pt}%
 }
 
 \newcommand{\publication}[3]{%
-  {\fontsize{9.1}{11.3}\selectfont\textbf{#1}\par}%
-  {\fontsize{9.1}{11.3}\selectfont
+  {\fontsize{9.25}{11.55}\selectfont\textbf{#1}\par}%
+  {\fontsize{9.25}{11.55}\selectfont
   \begin{tabularx}{\linewidth}{@{}Y>{\raggedleft\arraybackslash}p{1.12in}@{}}
     #2 & #3 \\
   \end{tabularx}}%
-  \vspace{1.2pt}%
+  \vspace{1.3pt}%
 }
 
 \newenvironment{cvitems}{%
@@ -72,14 +72,14 @@
     topsep=0.3pt,
     partopsep=0pt,
     parsep=0pt,
-    itemsep=2.8pt
+    itemsep=3.0pt
   ]
-  \fontsize{9.5}{11.9}\selectfont
-}{\end{itemize}\vspace{2.5pt}}
+  \fontsize{9.65}{12.15}\selectfont
+}{\end{itemize}\vspace{2.7pt}}
 
 \begin{document}
 \color{text}
-\fontsize{9.5}{11.9}\selectfont
+\fontsize{9.65}{12.15}\selectfont
 
 % Paint the portrait in the page foreground so font metrics cannot move or
 % suppress it. The coordinates align it with the top and right text margins.
@@ -97,7 +97,7 @@
   \vspace{0pt}
   {\sffamily\bfseries\fontsize{22}{24}\selectfont\color{navy}Haotian Liu}\par
   \vspace{3.6pt}
-  {\sffamily\fontsize{9.1}{11.5}\selectfont
+  {\sffamily\fontsize{9.2}{11.7}\selectfont
     \href{mailto:haotianliu.me@gmail.com}{haotianliu.me@gmail.com}
     \enspace\textcolor{muted}{|}\enspace
     \href{https://haotian-io.github.io/}{Homepage}
@@ -109,7 +109,7 @@
   \cvsection{Education}
   \entrytitle{Xiamen University (XMU), Xiamen, China}{Sep. 2023 -- Jun. 2027 (expected)}
   \entryrole{B.Eng. in Software Engineering \textbar{} Overall Average: 82.50/100}
-  {\fontsize{9.1}{11.3}\selectfont
+  {\fontsize{9.25}{11.55}\selectfont
   \textbf{Relevant Coursework:} Machine Learning for Decision-Making and Optimization (96); Algorithms for Modern AI (94); Introduction to Artificial Intelligence (93); Interactive Design (90); Data Warehouse (90).}
 \end{minipage}
 
@@ -152,7 +152,7 @@
 \entrytitle{Long-Horizon Memory Governance for LLM Agents (LHMG)}{Dec. 2025 -- May 2026}
 \entryrole{Project Lead \textbar{} Remote Research Collaboration \textbar{} School of Data Science, Fudan University}
 \begin{cvitems}
-  \item Developed a prototype memory-governance layer with append-only revisions, active-state semantics, risk gating, and governed forgetting for auditable long-horizon memory.
+  \item Developed a prototype memory-governance layer with append-only revision records, active-state semantics, risk gating, and governed forgetting.
   \item In controlled diagnostics, observed a 13.3-point GPT-4o gain in cross-turn decision consistency over flat memory.
 \end{cvitems}
 
@@ -172,7 +172,7 @@
 \end{cvitems}
 
 \cvsection{Technical Skills and Languages}
-{\fontsize{9.1}{11.3}\selectfont
+{\fontsize{9.25}{11.55}\selectfont
 \textbf{Programming and ML:} Python, PyTorch, Transformers, SQL, Java, Spring Boot, Unity; LLM agents, RAG, multimodal learning, evaluation, and \mbox{information retrieval}.\par
 \textbf{Research Tools:} Git, Linux, Docker, \LaTeX; experiment design, ablation studies, reproducible evaluation, and academic writing.\par
 \textbf{Languages and Tests:} Chinese (native); English (TOEFL iBT 90); Japanese (working reading proficiency).\par}
