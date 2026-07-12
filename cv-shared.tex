@@ -104,14 +104,14 @@
     \enspace\textcolor{muted}{|}\enspace
     \href{https://github.com/haotian-io}{GitHub}
     \enspace\textcolor{muted}{|}\enspace
-    \href{https://scholar.google.com/citations?user=hemBmosAAAAJ\&hl=en\&authuser=3}{Google Scholar}}
+    \href{https://scholar.google.com/citations?user=hemBmosAAAAJ\&hl=en}{Google Scholar}}
 
   \cvsection{Research Interests}
   LLM Agents \textbar{} Multimodal Large Language Models \textbar{} AI for Software Engineering and Human--Computer Interaction
 
   \cvsection{Education}
   \entrytitle{Xiamen University (XMU), Xiamen, China}{Sep. 2023 -- Jun. 2027 (expected)}
-  \entryrole{B.S. in Software Engineering \textbar{} Overall Average: 82.50/100}
+  \entryrole{B.Eng. in Software Engineering \textbar{} Overall Average: 82.50/100}
   {\fontsize{8.85}{10.9}\selectfont
   \textbf{Relevant Coursework:} Machine Learning for Decision-Making and Optimization (96); Algorithms for Modern AI (94); Introduction to Artificial Intelligence (93); Interactive Design (90); Data Warehouse (90).}
 \end{minipage}
@@ -134,8 +134,8 @@
 \entrytitle{DDRG: Reasoning-Graph Verification and Repair}{Apr. 2026 -- Present}
 \entryrole{Research Collaborator \textbar{} Li Lab}
 \begin{cvitems}
-  \item To address majority-vote failures in sampled reasoning, introduced an inference-time graph verification method that aligns local claims, isolates answer-sensitive conflicts, and accepts only evidence-supported repairs.
-  \item Evaluated LLaMA-3.1-70B on five reasoning benchmarks; case-level audits identified parser, verifier, and repair-selection failure modes and motivated conservative answer-selection gates.
+  \item Prototyped an inference-time reasoning-graph pipeline that samples candidate graphs, probes answer-sensitive claims, and gates local repairs conservatively.
+  \item Evaluated Llama 3.1 70B across multiple reasoning benchmarks; case-level audits characterized parser, verifier, and repair-selection failures and informed conservative answer-selection gates.
 \end{cvitems}
 
 \entrytitle{ConcordCoder: Pre-generation Alignment for AI Coding}{Mar. 2026 -- Present}
@@ -146,38 +146,38 @@
 \end{cvitems}
 
 \entrytitle{NeuroMark: Multimodal Clinical Reasoning}{Sep. 2025 -- Present}
-\entryrole{Research Contributor \textbar{} Research Training at the School of Data Science, Fudan University}
+\entryrole{Research Contributor \textbar{} Remote Research Collaboration \textbar{} School of Data Science, Fudan University}
 \begin{cvitems}
-  \item Led the initial project phase and introduced a difficulty-discrimination analysis to compare multimodal clinical reasoning beyond raw accuracy; benchmarked 36 foundation models across 10+ datasets and professional examinations.
-  \item Reproduced 3D diagnostic pipelines on IntrA and TOF-MRA data and developed weak-label strategies for scalable medical-image annotation.
+  \item Led the initial project phase and evaluated 20 LLMs on 2,379 clinical questions and 16 VLMs across six brain-imaging tasks.
+  \item Contributed to reliability analyses using safety compliance, effective accuracy, and difficulty discrimination; paired-model results showed no significant association between text and imaging performance ($\rho=0.14$, $p=0.76$).
 \end{cvitems}
 
 \entrytitle{Long-Horizon Memory Governance for LLM Agents (LHMG)}{Dec. 2025 -- May 2026}
-\entryrole{Project Lead \textbar{} Research Training at the School of Data Science, Fudan University}
+\entryrole{Project Lead \textbar{} Remote Research Collaboration \textbar{} School of Data Science, Fudan University}
 \begin{cvitems}
-  \item To prevent silent overwrite drift in long-horizon agents, proposed an auditable memory-governance layer combining append-only revisions, active-state semantics, risk-gated conditioning, and governed forgetting.
-  \item Increased GPT-4o cross-turn decision consistency by 13.3 points in controlled long-horizon evaluations.
+  \item Developed a prototype memory-governance layer combining append-only revisions, active-state semantics, risk-gated conditioning, and governed forgetting for auditable long-horizon agent memory.
+  \item In controlled diagnostics, observed a 13.3-point GPT-4o gain in cross-turn decision consistency over flat memory.
 \end{cvitems}
 
 \entrytitle{PilotBench: Safety-Critical Aviation Agents}{Dec. 2025 -- Mar. 2026}
-\entryrole{Project Lead \textbar{} Research Training at the School of Data Science, Fudan University}
+\entryrole{Core Contributor \textbar{} Remote Research Collaboration \textbar{} School of Data Science, Fudan University}
 \begin{cvitems}
-  \item To evaluate LLM agents under physical and safety constraints, constructed PilotBench from 708 real trajectories, 34-channel telemetry, and nine flight phases, and evaluated 41 models.
-  \item Introduced Pilot-Score and revealed a precision--controllability dichotomy plus a dynamic-complexity gap in high-workload phases; accepted by IJCNN 2026.
+  \item Co-developed PilotBench from 708 real trajectories, 34-channel telemetry, and nine flight phases; contributed to evaluations of 41 models.
+  \item Contributed to Pilot-Score design and analyses identifying a precision--controllability dichotomy and a dynamic-complexity gap in high-workload phases.
 \end{cvitems}
 
 \cvsection{Industry Experience}
 \entrytitle{ProcuraClaw: Context-Aware Procurement Search}{Nov. 2025 -- Apr. 2026}
-\entryrole{AI Research Intern \textbar{} Huazhu Group}
+\entryrole{AI Research Intern \textbar{} H World Group}
 \begin{cvitems}
-  \item To overcome vocabulary mismatch and hotel-specific ranking needs, built a deployed procurement-search agent with LLM entity extraction, hybrid retrieval, profile-conditioned scoring, and Thompson Sampling.
-  \item Achieved MRR 0.95 and NDCG@5 0.91 on 175 evaluation queries; live A/B tests improved first-hit CTR by 6.2\% and 9.8\% across two deployment slices.
+  \item Contributed to a deployed procurement-search system using LLM entity extraction, hybrid retrieval, profile-aware ranking, and Thompson Sampling.
+  \item The system achieved MRR 0.95 and NDCG@5 0.91 on 175 evaluation queries; reported live A/B tests increased first-hit CTR by 6.2\% and 9.8\% across two deployment slices.
 \end{cvitems}
 
 \cvsection{Technical Skills and Languages}
 {\fontsize{8.85}{10.9}\selectfont
 \textbf{Programming and ML:} Python, PyTorch, Transformers, SQL, Java; LLM agents, RAG, multimodal learning, evaluation, and information retrieval.\par
 \textbf{Research Tools:} Git, Linux, Docker, \LaTeX; experiment design, ablation studies, reproducible evaluation, and academic writing.\par
-\textbf{Languages and Tests:} Chinese (native); English (TOEFL iBT 90); Japanese (working reading proficiency). GRE scheduled for Aug. 2026.\par}
+\textbf{Languages and Tests:} Chinese (native); English (TOEFL iBT 90); Japanese (working reading proficiency).\par}
 
 \end{document}
