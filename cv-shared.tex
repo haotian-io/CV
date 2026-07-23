@@ -2,7 +2,7 @@
 % The entry-point file defines \CVFontSetup.
 \documentclass[10pt,a4paper]{article}
 
-\usepackage[a4paper,left=0.46in,right=0.46in,top=0.33in,bottom=0.43in]{geometry}
+\usepackage[a4paper,left=0.46in,right=0.46in,top=0.33in,bottom=0.31in]{geometry}
 \usepackage{fontspec}
 \usepackage{graphicx}
 \usepackage{array}
@@ -78,7 +78,7 @@
     itemsep=3.0pt
   ]
   \fontsize{9.65}{12.15}\selectfont
-}{\end{itemize}\vspace{2.7pt}}
+}{\end{itemize}\vspace{2.1pt}}
 
 \begin{document}
 \color{text}
@@ -120,9 +120,13 @@
     \enspace\textcolor{muted}{|}\enspace
     \href{https://github.com/haotian-io}{GitHub}
     \enspace\textcolor{muted}{|}\enspace
-    \href{
-      https://scholar.google.com/citations?user=hemBmosAAAAJ\&hl=en
-    }{Google Scholar}}
+    \href{https://scholar.google.com/citations?user=hemBmosAAAAJ\&hl=en}
+      {Google Scholar}}\par
+
+  \vspace{3.4pt}
+
+  {\sffamily\fontsize{9.05}{11.35}\selectfont\color{muted}
+    \textbf{Research Focus:} \CVResearchFocus\par}
 
   \cvsection{Education}
 
@@ -165,6 +169,7 @@
 
 \cvsection{Research Projects}
 
+\newcommand{\DDRGProject}{%
 \entrytitle
   {DDRG: Reasoning-Graph Verification and Repair}
   {Apr. 2026 -- Present}
@@ -184,7 +189,9 @@
   case audits characterized parser, verifier, and repair-selection
   failures and informed conservative selection gates.
 \end{cvitems}
+}
 
+\newcommand{\ConcordCoderProject}{%
 \entrytitle
   {ConcordCoder: Pre-generation Alignment for AI Coding}
   {Mar. 2026 -- Present}
@@ -206,7 +213,9 @@
   evidence grounding, guard violations, and multi-round constraint
   retention.
 \end{cvitems}
+}
 
+\newcommand{\NeuroMarkProject}{%
 \entrytitle
   {NeuroMark: Multimodal Clinical Reasoning}
   {Sep. 2025 -- Present}
@@ -228,7 +237,9 @@
   results showed no significant association between text and imaging
   performance ($\rho=0.14$, $p=0.76$).
 \end{cvitems}
+}
 
+\newcommand{\LHMGProject}{%
 \entrytitle
   {Long-Horizon Memory Governance for LLM Agents (LHMG)}
   {Dec. 2025 -- May 2026}
@@ -249,7 +260,9 @@
   \item In controlled diagnostics, observed a 13.3-point GPT-4o gain
   in cross-turn decision consistency over flat memory.
 \end{cvitems}
+}
 
+\newcommand{\PilotBenchProject}{%
 \entrytitle
   {PilotBench: Safety-Critical Aviation Agents}
   {Dec. 2025 -- Mar. 2026}
@@ -271,6 +284,9 @@
   precision--controllability dichotomy and a dynamic-complexity gap
   in high-workload phases.
 \end{cvitems}
+}
+
+\CVProjectSequence
 
 \cvsection{Industry Experience}
 
@@ -297,7 +313,8 @@
 
 {\fontsize{9.25}{11.55}\selectfont
   \textbf{AI and Programming:}
-  Machine learning, LLM agents, RAG, multimodal learning, and information retrieval; Python, PyTorch, C/C++, SQL, Java/JavaEE, Spring Boot, and Unity.\par
+  \CVAIKeywords; Python, PyTorch, C/C++, SQL, Java/JavaEE,
+  Spring Boot, and Unity.\par
 
   \textbf{Research and Academic Communication:}
   Benchmark and experiment design, model evaluation, ablation and error analysis, academic writing, and research presentations; Git, Linux, Docker, and \LaTeX.\par
