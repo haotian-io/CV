@@ -1,19 +1,10 @@
-# Haotian Liu — Academic CVs
+# Haotian Liu — Academic CV
 
-This repository contains the maintainable LaTeX source and three tailored
-one-page academic CVs for Japanese master's research outreach.
+This repository contains the maintainable LaTeX source and current PDF for Haotian Liu's one-page academic CV.
 
-- [Reliable LLM Agents & AI4SE](./CV_Haotian_Liu_LLM_Agents.pdf)
-- [Multimodal & Human-AI Systems](./CV_Haotian_Liu_Multimodal_HAI.pdf)
-- [AI Evaluation & Decision Intelligence](./CV_Haotian_Liu_AI_Decision.pdf)
-- [Default/current CV](./CV_Haotian_Liu.pdf), identical to the LLM/AI4SE version
-
-Source structure:
-
-- `resume.tex`: default LLM/AI4SE entry point
-- `resume-multimodal-hai.tex`: multimodal and human-AI entry point
-- `resume-ai-decision.tex`: AI evaluation and decision entry point
-- `cv-shared.tex`: shared facts, project descriptions, hyperlinks, and layout
+- [Current PDF](./CV_Haotian_Liu_202607_SGU.pdf)
+- `resume.tex`: document entry point and font setup
+- `cv-shared.tex`: CV content, hyperlinks, and layout rules
 - `Haotian.jpg`: portrait source
 
 ## Build
@@ -24,5 +15,4 @@ The exact typography uses the macOS system fonts Avenir Next and Charter. Instal
 make
 ```
 
-This generates all three named PDFs and refreshes `CV_Haotian_Liu.pdf`. Run
-`make clean` to remove generated LaTeX artifacts and PDFs.
+This generates `resume.pdf`. Run `make clean` to remove generated LaTeX artifacts.
