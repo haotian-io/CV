@@ -91,16 +91,17 @@
 \pubsection{Manuscripts}
 
 \pubentry
-  {3. Calibrated Lexical Fusion for Noise-Robust Retrieval of Colloquial Chinese Procurement Queries}
+  {3. LFUSE: Learned Evidence Fusion for Noisy Spoken and Image-Grounded Product Search}
   {Haotian Liu, Xiaowen Liu, Yunhan Wang, Yalun Wu, Minghan Yang,
    Xinhao Yu, Boyang Wang}
   {ICASSP 2027 -- Under review. First author.}
   {}
-  {A context-aware procurement-search system combining four-path hybrid
-   retrieval, hotel-profile-conditioned ranking, and online Thompson Sampling.
-   On 175 queries over a 1,854-SKU benchmark, it reaches MRR 0.95 and
-   NDCG@5 0.91; the centralization predictor reaches MAE 0.064 and
-   R-squared 0.747, while live A/B tests report 6.2\% and 9.8\% first-hit CTR gains.}
+  {A learned evidence-fusion model that reranks the union of BM25 and dense
+   candidates using rank, character, pinyin, and query-agreement features,
+   with noise-aware training for corrupted and ASR queries. It improves
+   MRR@10 over tuned convex fusion by 7.8\% on average across three
+   human-judged Chinese Multi-CPR domains and lowers fusion-stage latency by
+   80--100$\times$ versus LLM-based adaptive fusion.}
 
 \pubentry
   {4. Before the Agent Acts: Understanding, Task Accounts, and\\Implementation in Pre-Coding Review}

@@ -133,7 +133,7 @@
   \entryrole{
     B.Eng. in Software Engineering
     \textbar{}
-    Overall Average: 82.66/100
+    Overall Average: 82.52/100
   }
 
   {\fontsize{9.25}{11.55}\selectfont\raggedright
@@ -154,7 +154,7 @@
   {\href{https://arxiv.org/abs/2604.08987}{arXiv:2604.08987}}
 
 \publication
-  {Calibrated Lexical Fusion for Noise-Robust Retrieval of Colloquial Chinese Procurement Queries.}
+  {LFUSE: Learned Evidence Fusion for Noisy Spoken and Image-Grounded Product Search.}
   {\textit{ICASSP 2027}, under review. First author.}
   {}
 
@@ -258,7 +258,7 @@
 \cvsection{Industry Experience}
 
 \entrytitle
-  {ProcuraClaw: Procurement Search System}
+  {LFUSE: Learned Evidence Fusion for Procurement Search}
   {Nov. 2025 -- Apr. 2026}
 
 \entryrole{
@@ -268,16 +268,15 @@
 }
 
 \begin{cvitems}
-  \item Built a deployed B2B procurement-search system for a global
-  hotel group; designed a four-path hybrid retrieval pipeline
-  (exact, fuzzy, synonym, and selective semantic via BGE-M3)
-  fused with RRF, and a hotel-profile-driven quality function
-  across five operational dimensions.
+  \item Developed LFUSE for ProcuraClaw, a learned evidence-fusion
+  ranker that reranks BM25 and dense candidates using rank, character,
+  pinyin, and query-agreement features, with noise-aware training for
+  corrupted and ASR queries.
 
-  \item Implemented online personalisation with Thompson Sampling
-  and Posterior Dropout; achieved MRR\,0.95, NDCG@5\,0.91
-  (175 queries) with 6.2\%/9.8\% first-hit CTR gains in A/B tests;
-  work written up as a paper under review at ICASSP\,2027.
+  \item Improved MRR@10 over tuned convex fusion by 7.8\% on average
+  across three human-judged Chinese Multi-CPR domains while reducing
+  fusion-stage latency by 80--100$\times$ versus LLM-based adaptive
+  fusion; transferred the model to a 1,854-SKU, 175-request hotel catalog.
 \end{cvitems}
 
 \cvsection{Research and Technical Skills}
