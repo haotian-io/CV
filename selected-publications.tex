@@ -1,0 +1,121 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,left=0.64in,right=0.64in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{fontspec}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\setmainfont[LetterSpace=0.45]{Charter}
+\setsansfont{Avenir Next}
+
+\definecolor{navy}{HTML}{17365D}
+\definecolor{text}{HTML}{1E2630}
+\definecolor{muted}{HTML}{586574}
+\definecolor{rule}{HTML}{AAB7C4}
+\definecolor{link}{HTML}{245A92}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=link,
+  pdfauthor={Haotian Liu},
+  pdftitle={Haotian Liu - Selected Publications and Manuscripts}
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\emergencystretch}{1.5em}
+
+\newcommand{\pubsection}[1]{%
+  \vspace{13pt}%
+  {\sffamily\bfseries\fontsize{12.5}{15.2}\selectfont
+    \color{navy}\MakeUppercase{#1}}\par
+  \vspace{2pt}%
+  {\color{rule}\hrule height 0.7pt}\vspace{7pt}%
+}
+
+\newcommand{\pubentry}[5]{%
+  {\sffamily\bfseries\fontsize{11.7}{14.2}\selectfont #1}\par
+  {\fontsize{10.5}{13.0}\selectfont #2}\par
+  {\fontsize{10.4}{13.0}\selectfont\itshape #3}\par
+  {\fontsize{10.35}{12.9}\selectfont #4}\par
+  {\fontsize{10.5}{14.2}\selectfont #5}\par
+  \vspace{10pt}%
+}
+
+\begin{document}
+\color{text}
+
+{\sffamily\bfseries\fontsize{24.5}{28}\selectfont\color{navy}Haotian Liu}
+\hfill
+{\fontsize{11.2}{13.5}\selectfont Selected Publications \& Manuscripts}\par
+
+\vspace{4.5pt}
+{\fontsize{10.2}{12.8}\selectfont
+  \href{mailto:haotianliu.me@gmail.com}{haotianliu.me@gmail.com}
+  \enspace\textcolor{muted}{|}\enspace
+  \href{https://haotian-io.github.io/}{haotian-io.github.io}}
+\par\vspace{5pt}
+{\color{rule}\hrule height 0.8pt}
+
+\pubsection{Accepted}
+
+\pubentry
+  {1. PilotBench: A Benchmark for General Aviation Agents}
+  {Yalun Wu*, Haotian Liu*, Zhoujun Li, Boyang Wang}
+  {IEEE International Joint Conference on Neural Networks (IJCNN 2026).\enspace
+   \href{https://arxiv.org/abs/2604.08987}{arXiv:2604.08987}}
+  {}
+  {A flight-agent benchmark built from 708 real-world trajectories and
+   34-channel telemetry. Evaluation across 41 models identifies a
+   precision--controllability trade-off and a dynamic-complexity gap in
+   high-workload flight phases. Pilot-Score combines regression accuracy
+   with instruction following and constraint compliance. Traditional
+   forecasters reach MAE 7.01, while LLMs achieve 86--89\% instruction
+   following at 11--14 MAE.}
+
+\pubentry
+  {2. FLY-EVAL++: An Evidence-Driven Evaluation Protocol for Flight Prediction with Large Language Models}
+  {Yalun Wu, Junfeng Fang, Jiawei Wang, Haotian Liu, Qijun Yang, Minghan Yang,
+   Hongcheng Guo, Zhoujun Li, Boyang Wang}
+  {Conference on Language Modeling (CoLM 2026).\enspace
+   \href{https://arxiv.org/abs/2609.04021}{arXiv:2609.04021}}
+  {}
+  {An evidence-driven protocol for structured validity, physical feasibility,
+   and constraint compliance in flight prediction. Across 66 LLMs, predictive
+   quality and constraint compliance emerge as distinct capability dimensions,
+   with a 28.2-point constraint gap at comparable predictive quality.}
+
+\pubsection{Manuscripts}
+
+\pubentry
+  {3. Calibrated Lexical Fusion for Noise-Robust Retrieval of Colloquial Chinese Procurement Queries}
+  {Haotian Liu, Xiaowen Liu, Yunhan Wang, Yalun Wu, Minghan Yang,
+   Xinhao Yu, Boyang Wang}
+  {ICASSP 2027 -- Under review. First author.}
+  {}
+  {A context-aware procurement-search system combining four-path hybrid
+   retrieval, hotel-profile-conditioned ranking, and online Thompson Sampling.
+   On 175 queries over a 1,854-SKU benchmark, it reaches MRR 0.95 and
+   NDCG@5 0.91; the centralization predictor reaches MAE 0.064 and
+   R-squared 0.747, while live A/B tests report 6.2\% and 9.8\% first-hit CTR gains.}
+
+\pubentry
+  {4. Before the Agent Acts: Understanding, Task Accounts, and\\Implementation in Pre-Coding Review}
+  {Haotian Liu et al.}
+  {Manuscript in preparation.}
+  {}
+  {Introduces Collaborative Evidence-Constrained Task Interpretation (CETI),
+   a repository-grounded pre-coding review workflow with editable,
+   source-linked task Records. A 24-participant study over 72 cases reports a
+   +17.2 percentage-point adjusted Records-2 versus FreeChat-2 contrast in
+   objective understanding; a linked audit traces 102 request occurrences
+   through 93 families and 504 coding attempts across 10 tasks and 3 models.
+   Exact criteria cover 20 of 24 core families and 4 of 25 boundary families.}
+
+\vfill
+{\fontsize{9.0}{11.0}\selectfont * Equal contribution.}
+
+\end{document}

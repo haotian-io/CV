@@ -149,64 +149,41 @@
 \cvsection{Publications}
 
 \publication
-  {PilotBench: A Benchmark for General Aviation Agents with Safety Constraints.}
+  {PilotBench: A Benchmark for General Aviation Agents.}
   {\textit{IJCNN 2026}, \textbf{accepted}. Co-first author.}
   {\href{https://arxiv.org/abs/2604.08987}{arXiv:2604.08987}}
 
 \publication
-  {Long-Horizon Memory Governance for LLM Agents.}
-  {\textit{ICASSP 2027}, under review. First author.}
-  {}
-
-\publication
   {Calibrated Lexical Fusion for Noise-Robust Retrieval of Colloquial Chinese Procurement Queries.}
-  {\textit{ICASSP 2027}, under review. Co-first author.}
+  {\textit{ICASSP 2027}, under review. First author.}
   {}
 
 \cvsection{Research Projects}
 
 \entrytitle
-  {DDRG: Reasoning-Graph Verification and Repair}
-  {Apr. 2026 -- Present}
-
-\entryrole{
-  Research Collaborator
-  \textbar{}
-  University of Tokyo
-}
-
-\begin{cvitems}
-  \item Prototyped an inference-time reasoning-graph pipeline that
-  samples candidate graphs, probes answer-sensitive claims, and gates
-  local repairs conservatively.
-
-  \item Evaluated Llama 3.1 70B on multiple reasoning benchmarks;
-  case audits characterized parser, verifier, and repair-selection
-  failures and informed conservative selection gates.
-\end{cvitems}
-
-\entrytitle
-  {CETI: Evidence-Constrained Collaborative Task Interpretation}
+  {CETI: Before the Agent Acts}
   {Mar. 2026 -- Present}
 
 \entryrole{
   First Author
   \textbar{}
-  Collaboration with ZGC Lab (PKU) and Waseda University
+  Research Intern at ZGC Lab
 }
 
 \begin{cvitems}
-  \item Identified a cognitive gap--intent gap in repository-level
-  AI coding and proposed CETI, which generates atomic
-  task-constraint \textbf{Records} bound to repository evidence,
-  enabling developers to inspect and revise an agent's interpretation
-  \emph{before} a patch is generated.
+  \item Proposed CETI, a repository-grounded pre-coding review
+  workflow that represents task constraints as editable \textbf{Records}
+  linked to pinned source passages, allowing developers to revise an
+  agent's task interpretation before code generation.
 
-  \item Designed a four-stage pipeline (repository inspection,
-  source binding, developer review, coding handoff) and a
-  three-condition human study comparing FreeChat and one-/two-cycle
-  Records on objective comprehension, patch correctness, and
-  constraint satisfaction over ten FEA-Bench cases.
+  \item Evaluated the workflow with 24 participants across 72
+  repository-task cases; the two-cycle Records condition showed the
+  largest descriptive understanding gain (+17.2 percentage points
+  adjusted contrast vs. FreeChat-2; HC3 95\% CI [--6.0, 40.5]).
+
+  \item Traced 102 confirmed request occurrences through 93
+  within-trajectory families, linking 48 behavioral families to patches
+  and test evidence across 504 coding attempts on 10 tasks and 3 models.
 \end{cvitems}
 
 \entrytitle
@@ -222,19 +199,16 @@
 }
 
 \begin{cvitems}
-  \item Developed a memory-governance framework with conflict-aware
-  revision graphs, No-Silent-Overwrite semantics, risk-gated memory
-  conditioning, and governed forgetting to stabilize long-range
-  LLM-agent reasoning.
+  \item Developed a conflict-aware memory-governance framework for
+  long-horizon LLM agents, combining revision graphs, No-Silent-Overwrite
+  updates, risk-gated conditioning, and governed forgetting.
 
   \item Observed a 13.3-point GPT-4o gain in cross-turn decision
-  consistency over flat memory in controlled diagnostics;
-  paper has undergone review at ICML before
-  current ICASSP revision.
+  consistency over flat memory in controlled diagnostics.
 \end{cvitems}
 
 \entrytitle
-  {PilotBench: Safety-Critical Aviation Agents}
+  {PilotBench: General Aviation Agent Benchmark}
   {Dec. 2025 -- Mar. 2026}
 
 \entryrole{
@@ -247,22 +221,46 @@
 
 \begin{cvitems}
   \item Co-developed PilotBench from 708 real trajectories,
-  34-channel telemetry, and nine flight phases; contributed to
-  evaluations of 41 models.
+  34-channel telemetry, and nine flight phases; evaluated 41 models
+  with Pilot-Score, a composite of regression accuracy and
+  instruction following and constraint compliance.
 
-  \item Contributed to Pilot-Score design and analyses identifying a
-  precision--controllability dichotomy and a dynamic-complexity gap
-  in high-workload phases.
+  \item Identified a precision--controllability dichotomy: traditional
+  forecasters reached MAE 7.01, while LLMs achieved 86--89\%
+  instruction-following at 11--14 MAE; performance degraded in
+  high-workload flight phases.
+\end{cvitems}
+
+\entrytitle
+  {NeuroMark: Multimodal Reliability Evaluation for Neuropsychiatry}
+  {Sep. 2025 -- May 2026}
+
+\entryrole{
+  Research Contributor
+  \textbar{}
+  Remote Research Collaboration
+  \textbar{}
+  School of Data Science, Fudan University
+}
+
+\begin{cvitems}
+  \item Contributed to a multimodal neuropsychiatry benchmark that
+  jointly evaluates text-based clinical reasoning and brain-imaging
+  interpretation across 2,379 clinical questions and six imaging tasks.
+
+  \item Evaluated 20 LLMs and 16 VLMs; helped develop SCR, EA, DDI,
+  and JTI metrics to measure constraint compliance, effective accuracy,
+  difficulty sensitivity, and cross-modal reliability.
 \end{cvitems}
 
 \cvsection{Industry Experience}
 
 \entrytitle
-  {Calibrated Lexical Fusion for Noise-Robust Retrieval of Colloquial Chinese Procurement Queries}
+  {ProcuraClaw: Procurement Search System}
   {Nov. 2025 -- Apr. 2026}
 
 \entryrole{
-  AI Research Intern (ProcuraClaw system)
+  First Author
   \textbar{}
   H World Group
 }
@@ -284,15 +282,14 @@
 
 {\fontsize{9.25}{11.55}\selectfont
   \textbf{AI and Programming:}
-  LLM agents and memory, RAG and information retrieval,
-  multimodal learning, benchmark and evaluation design;
-  Python, PyTorch, HuggingFace, Spring Boot, SQL,
-  Java/JavaEE, C/C++, Unity.\par
+  LLM agents and memory, multimodal learning, AI for software
+  engineering and HCI, RAG and information retrieval, benchmark and
+  evaluation design; Python, PyTorch, Hugging Face, Spring Boot, SQL,
+  Java/Java EE, C/C++, Unity.\par
 
-  \textbf{Research and Academic Communication:}
-  Controlled experiment and human-study design, ablation and
-  error analysis, academic writing, peer-review response,
-  and research presentations;
+  \textbf{Research Methods and Tools:}
+  Controlled experiments and human studies, ablation and error
+  analysis, academic writing and presentations;
   Git, Linux, Docker, and \LaTeX.\par
 
   \textbf{Languages and Tests:}
