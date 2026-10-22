@@ -29,7 +29,7 @@
 \setlength{\emergencystretch}{1.5em}
 
 \newcommand{\pubsection}[1]{%
-  \vspace{13pt}%
+  \vspace{10pt}%
   {\sffamily\bfseries\fontsize{12.5}{15.2}\selectfont
     \color{navy}\MakeUppercase{#1}}\par
   \vspace{2pt}%
@@ -42,7 +42,7 @@
   {\fontsize{10.4}{13.6}\selectfont\itshape #3}\par
   {\fontsize{10.35}{13.5}\selectfont #4}\par
   {\fontsize{10.6}{15.0}\selectfont #5}\par
-  \vspace{12pt}%
+  \vspace{8pt}%
 }
 
 \begin{document}
@@ -88,10 +88,26 @@
    quality and constraint compliance emerge as distinct capability dimensions,
    with a 28.2-point constraint gap at comparable predictive quality.}
 
-\pubsection{Manuscripts}
+\pubsection{Under Review}
 
 \pubentry
-  {3. LFUSE: Learned Evidence Fusion for Noisy Spoken and Image-Grounded Product Search}
+  {3. Beyond Answer Voting: Fine-Grained Correction of LLM Reasoning through\\Graph Alignment across Sampled Traces}
+  {Haotian Liu, Yingjian Chen, Xiaohang Xu, Lang Huang, Yusuke Iwasawa,
+   Yutaka Matsuo, Irene Li}
+  {ACL Rolling Review (ARR) -- Under review. First author.\enspace
+   \href{https://arxiv.org/abs/2610.18606}{arXiv:2610.18606}}
+  {}
+  {Introduces DDRG (Disagreement-Driven Verification Guided by Reasoning
+   Graphs), which builds source-grounded claim graphs from a frozen bank of
+   sampled traces, sends aligned claim-level conflicts to an answer-blind
+   verifier, and triggers one focused repair only when a refutation reaches
+   the majority answer's supporting path; otherwise it returns the exact
+   self-consistency vote. Across five benchmarks, zero-shot DDRG improves
+   macro-average accuracy over direct answering by 8.65 and 15.83 points for
+   Qwen2.5-7B and Llama3.1-8B.}
+
+\pubentry
+  {4. LFUSE: Learned Evidence Fusion for Noisy Spoken and Image-Grounded Product Search}
   {Haotian Liu, Xiaowen Liu, Yunhan Wang, Yalun Wu, Minghan Yang,
    Xinhao Yu, Boyang Wang}
   {ICASSP 2027 -- Under review. First author.}
@@ -104,9 +120,9 @@
    80--100$\times$ versus LLM-based adaptive fusion.}
 
 \pubentry
-  {4. Before the Agent Acts: Understanding, Task Accounts, and\\Implementation in Pre-Coding Review}
+  {5. Before the Agent Acts: Understanding, Task Accounts, and\\Implementation in Pre-Coding Review}
   {Haotian Liu, Mingyue Zhang, Nianyu Li, Eunsuk Kang, Jialong Li}
-  {Manuscript in preparation.}
+  {Empirical Software Engineering (EMSE) -- Under review. First author.}
   {}
   {Introduces Collaborative Evidence-Constrained Task Interpretation (CETI),
    a repository-grounded pre-coding review workflow with editable,
@@ -115,6 +131,19 @@
    objective understanding; a linked audit traces 102 request occurrences
    through 93 families and 504 coding attempts across 10 tasks and 3 models.
    Exact criteria cover 20 of 24 core families and 4 of 25 boundary families.}
+
+\pubsection{Manuscripts}
+
+\pubentry
+  {6. Long-Horizon Memory Governance for LLM Agents (LHMG)}
+  {Haotian Liu (first author)}
+  {Manuscript in preparation; not yet submitted.}
+  {}
+  {A modular governance layer that treats agent memory as auditable state,
+   combining append-only revision records, active-state semantics,
+   No-Silent-Overwrite updates, risk-gated conditioning, and governed
+   forgetting. Controlled diagnostics show a 13.3-point GPT-4o gain in
+   cross-turn decision consistency over flat memory.}
 
 \vfill
 {\fontsize{9.0}{11.0}\selectfont * Equal contribution.}
