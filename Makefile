@@ -1,5 +1,5 @@
 TECTONIC ?= tectonic
-PDF := CV_Haotian_Liu.pdf
+PDF := CV_Haotian_Liu_ScienceTokyo.pdf
 SOURCES := resume.tex cv-shared.tex Haotian.jpg
 
 .PHONY: all clean
